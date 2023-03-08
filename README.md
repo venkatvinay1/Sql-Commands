@@ -10,6 +10,9 @@ SELECT DISTINCT Country FROM Customers;
 
 SELECT COUNT(DISTINCT Country) FROM Customers;
 
+
+## Where Clause
+
 SELECT * FROM Customers
 WHERE Country='Mexico';
 
@@ -32,5 +35,32 @@ WHERE NOT Country='Germany';
 
 SELECT * FROM Customers
 WHERE Country='Germany' AND (City='Berlin' OR City='München');
+
+## Order By
+SELECT * FROM Customers
+ORDER BY Country;
+
+SELECT * FROM Customers
+ORDER BY Country DESC;
+
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
